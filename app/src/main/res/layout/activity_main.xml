@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDD9BC"
+    android:paddingBottom="9dp"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/clothesbutton"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@drawable/custombutton1"
+        android:padding="15dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/laundry"
+        app:layout_constraintBottom_toTopOf="@+id/foodbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/foodbutton"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@drawable/custombutton2"
+        android:padding="15dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/dinner"
+        app:layout_constraintBottom_toTopOf="@+id/medicinebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/medicinebutton"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@drawable/custombutton3"
+        android:padding="15dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/medicine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="239dp"
+        android:layout_height="75dp"
+        android:text="DAAN"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/Punchline"
+        android:layout_width="337dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Want to be modern karna?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/clothesbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/aboutbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="#FFFFBB33"
+        android:text="About"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicinebutton"
+        app:layout_constraintVertical_bias="0.898" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
